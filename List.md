@@ -48,11 +48,10 @@
   * Low performance
 
     > * `Low speed`
-    >   → Data search하는데 오랜 시간이 소요된다.				 
+    >   	→ Data search하는데 오랜 시간이 소요된다.				 
     >
     >   → Data의 갯수를 알기 위해서 N(data의 갯수)만큼 반복해서 count해야한다.
   
-  * 
 
 
 - **Time complexity.**
