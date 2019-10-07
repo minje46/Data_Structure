@@ -63,7 +63,7 @@
 
 - **Time complexity.**
 
-  > * Access 
+  > * Indexing
   >   $$
   >   O(1)
   >   $$
