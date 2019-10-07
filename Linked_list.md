@@ -54,7 +54,7 @@
   >   $$
   >   O(1)
   >   $$
-  >   → Node를 insert, delete해주면 되기 때문.
+  >   → Head에서 node로 direct access 하기 때문.
   >
   > - Insert & Delete *in middle*
   >   $$
