@@ -7,6 +7,8 @@
 
   (리스트는 데이터를 순차적으로 저장하고, 빈틈없이 데이터를 적재하는 장점을 취한 자료구조.)
 
+  > ![java_jcf](https://user-images.githubusercontent.com/23169707/66321868-3495b400-e95c-11e9-88b7-d044bf5db01c.png)
+  >
   > → **List는 pointer를 사용해 sequential 저장하는 linear(선형) data structure.** (List에서 index는 **몇 번째의 data** 정도의 의미를 가진다.)
   >
   > > * Head : 처음 data를 가리키는 pointer.
