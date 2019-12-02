@@ -2,75 +2,86 @@
 
 ## Stack
 
-- **Array is data structure that controls associated data by grouping it into one name **
+- **Stack is data structure that data is stacked like a pile of things.**
   <br>
 
-  (배열이란, 연관된 데이터를 하나의 이름으로 그룹핑해서 관리하기 위한 자료구조.)
+  (스택이란, 물건을 쌓아 올리듯 자료를 쌓아 올린 형태의 자료구조.)
 
-  > → **Array는 data structure의 size가 fixed되어 있고, data를 physical address에 sequential 저장한다.**
+  > → **Stack은 LIFO(Last In First Out) 형식으로 마지막에 삽입된 자료가 가장 먼저  꺼내진다.**
   >
-  > * Index : Data(value)에 대한 위치.
-  > * Value : Memory에 저장되어 있는 값.
-  > * Element : Index와 Value를 포함한 Array의 data.
+  > * Top : 가장 최근에 저장된 데이터를 가리킨다.
+  > * Push : Stack의 Last위치에 data를 저장한다.
+  > * Pop : Stack에서 Top이 가리키는 data를 삭제한다.
   >
-  > ![image](https://user-images.githubusercontent.com/23169707/66268907-0c835380-e87d-11e9-9348-1274f8f99c4d.png)
+  > ![stack](https://user-images.githubusercontent.com/23169707/69931526-fa373600-150a-11ea-8a66-0fe96c7beb2f.jpg)
 
 
 - **Features**
 
-  1. Fixed size 
+  1. LIFO(Last In First Out)
 
-     > → Size를 변경할 수 없다.
+     > → LIFO(Last In First Out) 형식으로 마지막에 삽입된 자료가 가장 먼저  꺼내진다.
      >
-     > - 가변 array일 경우.
+     > * Top이 가리키는 data만 접근할 수 있다.
      >
-     > 1. 새로운 size를 할당하기 위해 memory가 있는지 탐색.
-     > 2. 기존 array의 data를 copy.
-     > 3. 기존 array를 delete.
+     >   > → 가장 마지막에 push된 data.
      >
-     > → 3번의 Task + Memory search의 resource 낭비 大
-
-  2. Index
-
-     > ![image](https://user-images.githubusercontent.com/23169707/66269394-cdf09780-e882-11e9-982a-53134a8817d6.png)
+     > * Stack에 저장된 중간의 data는 알 수 없다.
      >
-     > Pros : `Data를 찾기 위한 search과정 없이. index를 통해 빠른 access가 가능하다.[=random access]`
+     >   > → Data search가 불가능.
+   >
+     > * First pushed data는 위에 stacked된 data를 모두 pop해야 접근할 수 있다.
+
+  2. Linear structure(선형구조)
+  
+     > → Stack에 저장된 data는 linear structure를 가진다.
      >
-     > Cons : `Data와 index가 fixed되어 있어, 중간에 delete되면 memory 낭비 발생.`
-
-  3. No functions.
-
-     > Pros : `Array는 다른 data structure의 component(element)가 될 수 있다.`
+     > * Linear structure
+   >
+     >   > → 자료 간의 관계가 1 : 1 관계를 가진다.
+   >   > ex) array, list, stack, queue
      >
-     > Cons : `기능을 사용하기 위해 직접 구현해야 한다.` 
+     > * Nonlinear structure
+     >
+   >   > → 자료 간의 관계가 1 : N의 관계를 가진다.
+     >   > ex) Tree
 
-  4. Cache hit
+- **Examples**
 
-     > → Cache hit의 가능성이 높기 때문에 high performance.
+  > * Recursive algorithm
+  >
+  >   > → Recursive function의 경우, temporary data를 stack에 저장하고, back tracking할 때 stack의 data를 pop하는 구조.
+  >
+  > * Web browser (뒤로가기 기능)
+  >
+  > * Undo (실행 취소)
 
-- **Limits**
 
-  * Fixed size & Index
+- **Implemented**
 
-    > ![image](https://user-images.githubusercontent.com/23169707/66269537-7a7f4900-e884-11e9-9bcb-35598650b81d.png)
+  * Array
+
+    > → `Pros` : Implemented easily. (Top의 index만 조정해주면 된다.)
     >
-    > → `Memory 낭비` : Array는 index에 따라서 value를 유지하기 때문에, element가 delete되어도 null(빈자리)가 남게된다.
+    > → `Cons` : Fixed size.
+    
+  * List
+  
+    > → `Pros` : Memory dynamic allocation. (저장소를 동적으로 할당.)
     >
-    > → `Memory 종속` : Array는 연속된 memory를 할당하기 때문에, memory에 종속적이다.
-    >
-    > → `Sequential` : Data가 순차적으로 연속 저장되어 있기 때문에, 중간에 data를 insert & delete하는 경우 overhead. 
+    > → `Cons` : Implement hard.
 
 
 - **Time complexity.**
 
-  > * Indexing
+  > * Array
   >   $$
   >   O(1)
   >   $$
-  >   → Index를 이용하여 direct access가 가능하기 때문.
+  >   → Array로 구현된 경우, **index를 통해 top을 저장**하고 있기 때문에 Push & Pop & Empty & Size 모두 O(1)로 가능.
   >
-  > * Search
+  > * List
   >   $$
   >   O(N)
   >   $$
-  >   → N만큼 linear search해야 하기 때문.
+  >   → List로 구현된 경우, Head에서 top까지 access해야 Size를 알 수 있다.
