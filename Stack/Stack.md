@@ -31,7 +31,8 @@
      >   > → Data search가 불가능.
      >   >
      >   > → First pushed data는 위에 stacked된 data를 모두 pop해야 접근할 수 있다.
-2. Linear structure(선형구조)
+     
+  2. Linear structure(선형구조)
   
      > → Stack에 저장된 data는 linear structure를 가진다.
      >
@@ -44,7 +45,6 @@
      >
      >   > → 자료 간의 관계가 1 : N의 관계를 가진다.
      >   > ex) Tree
-  
 - **Examples**
 
   > * Recursive algorithm
