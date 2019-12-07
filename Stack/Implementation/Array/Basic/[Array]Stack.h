@@ -23,4 +23,4 @@ int Size();
 void Print();
 #else							// if not, do compile below code.
 
-#endif						
+#endif

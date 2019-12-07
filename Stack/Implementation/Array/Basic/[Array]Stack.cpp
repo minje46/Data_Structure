@@ -1,7 +1,7 @@
 #include<iostream>
 #include "[Array]Stack.h"
 
-using namespace std;
+using namespace std;             
 
 void Init()								// To do initialize the stack.
 {

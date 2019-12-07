@@ -7,7 +7,7 @@ stack stk;					// Stack memory based on array.
 
 int main(void)
 {	
-	Init();
+	Init();           
 	if (Empty())
 		cout << "Stack is empty" << endl;
 
