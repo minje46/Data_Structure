@@ -1,10 +1,14 @@
-#include<stdio.h>
+#include<iostream>
 #include "Linked_list.h"
+
+using namespace std;
+
+Node *head, *tail = NULL;
 
 int main(void)
 {
 	if (Empty())
-		printf("Empty\n");
+		cout << "List is empty" << endl;
 
 	for (int i = 1; i <= 10; i++)
 	{
@@ -15,12 +19,12 @@ int main(void)
 	}
 	Print();
 	if (Empty())
-		printf("Not empty");
+		cout << "List is not empty" << endl;
+
 	for (int i = 1; i <= 2; i++)
 	{
-		printf("\n");
 		pop_front();
 		pop_back();
-		printf("%d \n", Size());
+		cout << Size() << endl;
 	}
 }

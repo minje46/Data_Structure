@@ -1,15 +1,8 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<iostream>
 #include<malloc.h>
-#include<stdbool.h>
+#include "Linked_list.h"
 
-typedef struct Node			// Node data.
-{
-	int key;
-	struct Node *next;
-}Node;
-
-Node *head, *tail = NULL;
+using namespace std;
 
 void push_front(int key)	// Push new node in header.
 {
@@ -26,7 +19,7 @@ void push_front(int key)	// Push new node in header.
 	}
 	else
 	{
-		int nxt = head->next;
+		auto nxt = head->next;
 		head->next = new_node;
 		new_node->next = nxt;
 	}
@@ -75,7 +68,7 @@ void pop_back()		// Pop the node from tail.
 	tail->next = NULL;
 }
 
-bool Empty()		// To figure out whether it is empty or not.
+bool Empty()					// To figure out whether it is empty or not.
 {
 	if (head == tail)
 		return true;
@@ -95,7 +88,6 @@ int Size()		// The size of linked list.
 		ptr = ptr->next;
 		cnt += 1;
 	}
-
 	return cnt;
 }
 
@@ -104,7 +96,7 @@ void Print()		// Print the whole of list.
 	Node *ptr = head->next;
 	while (ptr)
 	{
-		printf("%d\n", ptr->key);
+		cout << ptr->key << endl;
 		ptr = ptr->next;
 	}
 }
