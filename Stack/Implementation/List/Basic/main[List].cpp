@@ -1,13 +1,13 @@
 #include<iostream>
-#include "[Array]Stack.h"
+#include "Stack[List].h"
 
 using namespace std;
 
-stack stk;					// Stack memory based on array.
+stack *head, *stk;					// Stack memory based on array.
 
 int main(void)
-{	
-	Init();           
+{
+	Init();
 	if (Empty())
 		cout << "Stack is empty" << endl;
 
@@ -20,6 +20,7 @@ int main(void)
 	for (int i = 0; i < 5; i++)
 	{
 		Pop();
+		cout << endl << "Size of stack : " << Size() << endl;
 		Print();
 	}
 }

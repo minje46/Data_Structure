@@ -1,6 +1,6 @@
 #include<iostream>
 #include<malloc.h>
-#include "[List]Stack.h"
+#include "Stack[List].h"
 
 using namespace std;
 
