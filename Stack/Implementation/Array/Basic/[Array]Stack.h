@@ -10,17 +10,17 @@ struct Stack
 };
 
 typedef struct Stack stack;
+extern stack stk;					//	External global variable.
+void Init();
+bool Full();
+bool Empty();
 
-void Init(stack *pstk);
-bool Full(stack *pstk);
-bool Empty(stack *pstk);
+void Push(int key);
+void Pop();
 
-void Push(stack *pstk, int key);
-void Pop(stack *pstk);
-
-int Peek(stack *pstk);
-int Size(stack *pstk);
-void Print(stack *pstk);
+int Peek();
+int Size();
+void Print();
 #else							// if not, do compile below code.
 
 #endif						
