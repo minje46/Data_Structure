@@ -22,23 +22,6 @@ vector<int> solution(vector<int> prices)
 	return answer;
 }
 
-vector<int> solution(vector<int> prices)
-{
-	vector<int> answer;
-	for (int i = 0; i<prices.size(); i++)				// In the whole of prices.
-	{
-		stack<int> stk;
-		for (int j = i + 1; j<prices.size(); j++)		// From current +1 To end.
-		{
-			stk.push(prices[j]);
-			if (prices[i] > prices[j])					// Compare the prices.
-				break;
-		}
-		answer.push_back(stk.size());				// Time of maintain. 
-	}
-	return answer;
-}
-
 int main(void)
 {
 	ios_base::sync_with_stdio(false);
