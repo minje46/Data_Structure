@@ -3,23 +3,29 @@
 #include <vector>
 
 using namespace std;
+
 vector<int> solution(vector<int> prices) 
 {
 	vector<int> answer(prices.size());
-	stack<int> s;
-	int size = prices.size();
-	for (int i = 0; i<size; i++) {
-		while (!s.empty() && prices[s.top()]>prices[i]) {
-			answer[s.top()] = i - s.top();
-			s.pop();
+	stack<int> stk;
+
+	for (int i = 0; i < prices.size(); i++)				// In the whole of prices.
+	{
+		while (!stk.empty() && prices[stk.top()] > prices[i])
+		{														// Compare the prices.	
+			answer[stk.top()] = i - stk.top();		// The moment when the price was decreased.
+			stk.pop();										// [Price가 감소한 시점에서, 자기 위치 index을 뺀 값이 유지된 시간.]
 		}
-		s.push(i);
+		stk.push(i);											// If the prices keep high, it is in the stack.
 	}
-	while (!s.empty()) {
-		answer[s.top()] = size - s.top() - 1;
-		s.pop();
+
+	while (!stk.empty())									// Remainders.
+	{															// [Price가 감소하지 않고 계속 증가한 경우들.]
+		answer[stk.top()] = prices.size() - stk.top() - 1;
+		stk.pop();											// [전체 price들 중에서, 자기 위치 index와 1을 뺀 값이 유지된 시간.]	
 	}
-	return answer;
+
+	return answer;											// Output.
 }
 
 int main(void)
