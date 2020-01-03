@@ -10,7 +10,6 @@ typedef struct Node stack;
 extern stack *head, *stk;		//	External global variable.
 
 void Init();
-bool Full();
 bool Empty();
 
 void Push(int key);
