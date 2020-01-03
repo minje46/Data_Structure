@@ -8,7 +8,7 @@ class Stack
 private:
 	int arr[MAX];
 	int top;
-
+							
 public:
 	Stack();
 	~Stack();
