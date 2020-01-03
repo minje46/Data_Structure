@@ -1,13 +1,12 @@
 #include<iostream>
-#include<malloc.h>
 #include "Stack[List-Class].h"
 
 using namespace std;
 
 Stack::Stack()							// Constructor.
 {
-	head = NULL;						// stack is initialized as null.
-	stk = NULL;						// stk is used as top.
+	head = new stack();				// stack is initialized as null.
+	stk = new stack();				// stk is used as top.
 }
 
 Stack::~Stack()						// Destructor.
@@ -18,7 +17,7 @@ Stack::~Stack()						// Destructor.
 
 bool Stack::Empty()					// To check stack is empty or not.
 {
-	if (head == stk)					// Condition of empty stack.
+	if (head->key == stk->key)	// Condition of empty stack.
 		return true;
 	else
 		return false;
@@ -26,14 +25,10 @@ bool Stack::Empty()					// To check stack is empty or not.
 
 void Stack::Push(int key)			// Push the value in stack.	
 {
-	stack *new_node = (stack *)malloc(sizeof(stack));
-	new_node->key = key;
-	new_node->next = NULL;
+	stack *new_node = new stack(key);
 
 	if (Empty())
-	{
-		head = (stack *)malloc(sizeof(stack));
-		stk = (stack *)malloc(sizeof(stack));
+	{	
 		stk = new_node;
 		head->next = stk;
 	}
@@ -44,7 +39,7 @@ void Stack::Push(int key)			// Push the value in stack.
 	}
 }
 
-void Stack::Pop()								// Pop the last value from stack.
+void Stack::Pop()						// Pop the last value from stack.
 {
 	if (Empty())
 		cout << "Stack Empty" << endl;
@@ -53,18 +48,18 @@ void Stack::Pop()								// Pop the last value from stack.
 		stack *ptr = head->next;
 		while (ptr->next != stk)
 			ptr = ptr->next;
-		free(stk);
+		delete(stk);
 		stk = ptr;
 		stk->next = NULL;
 	}
 }
 
-int Stack::Peek()								// Top in stack.
+int Stack::Peek()							// Top in stack.
 {
 	return stk->key;
 }
 
-int Stack::Size()								// The size of stack.
+int Stack::Size()							// The size of stack.
 {
 	int cnt = 0;
 	stack *ptr = head->next;
@@ -76,7 +71,7 @@ int Stack::Size()								// The size of stack.
 	return cnt;
 }
 
-void Stack::Print()								// Print the whole of stack.
+void Stack::Print()						// Print the whole of stack.
 {
 	stack *ptr = head->next;
 	while (ptr)
