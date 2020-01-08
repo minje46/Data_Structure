@@ -9,25 +9,25 @@ bool Check(string str)
 	stack<char> stk;
 	for (int i = 0; i < str.length(); i++)
 	{
-		if (str[i] == '(')				// Just push.
+		if (str[i] == '(')						// Just push.
 			stk.push(str[i]);
-		else								// When the ')' comes,	
+		else										// When the ')' comes,	
 		{
-			if (!stk.empty())			// the stack should be not empty state.
+			if (!stk.empty())					// the stack should be not empty state.
 			{
 				if (stk.top() == '(')			// also, the '(' should be stored.	
 					stk.pop();
 				else								// If not, wrong case.
 					return false;	
 			}	
-			else							// If stack is empty, wrong case.
+			else									// If stack is empty, wrong case.
 				return false;
 		}
 	}
 
-	if (stk.empty())					// If the whole '(' and ')' popped, correct case. 
+	if (stk.empty())							// If the whole '(' and ')' popped, correct case. 
 		return true;
-	else									// If not, worng case.
+	else											// If not, worng case.
 		return false;
 }
 
