@@ -4,14 +4,14 @@
 
 using namespace std;
 
-vector<int> solution(vector<int> heights)		// To figure out the nearest tower which is higher than current one.
+vector<int> solution(vector<int> heights)				// To figure out the nearest tower which is higher than current one.
 {
 	int n = heights.size();
 	vector<int> answer(n);
 	for (int i = n - 1; i > 0; i--)
 	{
-		stack<pair<int, int>> stk;						// The tower's height which is located left from current one.
-		for (int j = 0; j < i; j++)							// <index, height>
+		stack<pair<int, int>> stk;								// The tower's height which is located left from current one.
+		for (int j = 0; j < i; j++)									// <index, height>
 			stk.push(make_pair(j + 1, heights[j]));
 
 		int idx = 0;
@@ -20,13 +20,13 @@ vector<int> solution(vector<int> heights)		// To figure out the nearest tower wh
 			auto cur = stk.top();
 			stk.pop();
 
-			if (cur.second > heights[i])				// Compare the heights.
+			if (cur.second > heights[i])						// Compare the heights.
 			{
 				idx = cur.first;
 				break;
 			}
 		}
-		answer[i] = idx;									// Results.
+		answer[i] = idx;											// Results.
 	}
 	return answer;
 }
