@@ -5,9 +5,9 @@
 
 using namespace std;
 
-int K;						// K = The number of inputs.	
-stack<int> stk;		// stk = The memory of input in stack data structure.
-int answer = 0;		// answer = The total sum as output.
+int K;								// K = The number of inputs.	
+stack<int> stk;				// stk = The memory of input in stack data structure.
+int answer = 0;				// answer = The total sum as output.
 
 int main(void)
 {
