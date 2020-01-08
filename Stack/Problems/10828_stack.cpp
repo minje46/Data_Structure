@@ -13,9 +13,9 @@ int main(void)
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);	cout.tie(0);
 
-	int N;							// N = The number of instructions.
+	int N;														// N = The number of instructions.
 	cin >> N;
-	cin.ignore();				// To clear "\n" in buffer.
+	cin.ignore();											// To clear "\n" in buffer.
 	for (int i = 0; i < N; i++)
 	{
 		string str;
