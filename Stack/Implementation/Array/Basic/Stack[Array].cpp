@@ -45,7 +45,7 @@ void Pop()								// Pop the last value from stack.
 
 int Peek()								// Top in stack.
 {
-	return stk.top;
+	return stk.arr[stk.top];
 }
 
 int Size()								// The size of stack.
