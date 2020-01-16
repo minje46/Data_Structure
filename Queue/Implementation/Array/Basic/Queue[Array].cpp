@@ -18,7 +18,7 @@ bool Full()								// To check queue is full or not.
 
 bool Empty()							// To check queue is empty or not.
 {
-	if (que.front == que.rear)		// Condition of empty queue.
+	if (que.front == -1 || que.front > que.rear)		// Condition of empty queue.
 		return true;
 	else
 		return false;
