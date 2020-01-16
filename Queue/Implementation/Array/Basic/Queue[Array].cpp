@@ -30,6 +30,8 @@ void Enqueue(int key)				// Enqueue the value in queue
 		cout << "Queue Full" << endl;
 	else
 	{
+		if (que.front == -1)
+			que.front += 1;
 		que.rear += 1;
 		que.arr[que.rear] = key;
 	}
@@ -50,7 +52,7 @@ int Peek()								// Front in queue.
 
 int Size()								// The size of queue.
 {
-	return que.rear - que.front;
+	return que.rear - que.front + 1;
 }
 
 void Print()								// Print the whole of queue
