@@ -24,7 +24,7 @@ bool Queue::Full()					// To check queue is full or not.
 
 bool Queue::Empty()				// To check queue is empty or not.
 {
-	if (front == rear)					// Condition of empty queue.
+	if (front == -1 || front > rear)					// Condition of empty queue.
 		return true;
 	else
 		return false;
