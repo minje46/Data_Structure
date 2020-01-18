@@ -24,11 +24,24 @@
      >
      > `cons` : **deque**에 저장된 중간의 data에 접근이 불가능.
      
+  3. Memory allocation
+  
+     > → **deque**은 여러 개의 memory block을 할당하고, user에게는 하나의 block처럼 보이게 하는 방식.
+     >
+     > ​	Data를 추가할 때, memory가 부족하다면, 일정한 크기의 memory block을 할당하여 연결한다.
+     >
+     > ![image](https://user-images.githubusercontent.com/23169707/72663801-c623c000-3a39-11ea-8c2c-950a7385f2d5.png)
+     
   3. Random access
   
-     > 
-     
-  3. Linear structure(선형구조)
+     > → **deque**는 sequence container이며, array 기반 container이다.
+     > 그래서 **vector**와 유사한 특징을 가지며, random access iterator를 지원한다.
+     >
+     > <img width="209" alt="Random_access" src="https://user-images.githubusercontent.com/23169707/72624627-a71a2500-398a-11ea-9200-cc8f2981f6bc.png">
+     >
+     > `Random Access` : 특정 위치로 directly access 가능한 것을 말한다.
+  
+  4. Linear structure(선형구조)
   
      > → Deque에 저장된 data는 linear structure를 가진다.
      >
