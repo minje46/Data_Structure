@@ -17,14 +17,13 @@
 
 
 - **Features**
-
-  2. Front & Rear
+  1. Front & Rear
 
      > `pros` : Front 와 Rear를 통해 **deque**의 앞과 뒤 data에 접근이 용이.
      >
      > `cons` : **deque**에 저장된 중간의 data에 접근이 불가능.
      
-  3. Memory allocation
+  2. Memory allocation
   
      > → **deque**은 여러 개의 memory block을 할당하고, user에게는 하나의 block처럼 보이게 하는 방식.
      >
