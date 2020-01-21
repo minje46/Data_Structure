@@ -22,7 +22,7 @@ int solution(vector<int> priorities, int location)					// To figure out the targ
 			cnt++;								// Count of printed documents.
 			priorities[cur] = -1;				// Convert to trash value.
 
-			if (location == cur)						// Target.
+			if (location == cur)				// Target.
 				return cnt;
 		}
 		else
