@@ -35,7 +35,44 @@
   >
   > - Traversal(순회)
   >
-  >   > `Pre-order(전위 순회)` / `In-order(중위 순회)` / `Post-order(후위 순회)`
+  >   > - `Pre-order(전위 순회)` 
+  >   >
+  >   >   ```c++
+  >   >   void Pre_order(TreeNode node)
+  >   >   {
+  >   >   	if(node == NULL)
+  >   >           return;
+  >   >       cout << node->data;			// Root
+  >   >       Pre_order(node->left);		// Left	
+  >   >       Pre_order(node->right);		// Right
+  >   >   }
+  >   >   ```
+  >   >
+  >   > - `In-order(중위 순회)`
+  >   >
+  >   >   ```c++
+  >   >   void In_order(TreeNode node)
+  >   >   {
+  >   >   	if(node == NULL)
+  >   >           return;
+  >   >       In_order(node->left);		// Left	
+  >   >       cout << node->data;			// Root
+  >   >       In_order(node->right);		// Right
+  >   >   }
+  >   >   ```
+  >   >
+  >   > - `Post-order(후위 순회)`
+  >   >
+  >   >   ```c++
+  >   >   void Post_order(TreeNode node)
+  >   >   {
+  >   >   	if(node == NULL)
+  >   >           return;
+  >   >       Post_order(node->left);		// Left	
+  >   >       Post_order(node->right);	// Right
+  >   >       cout << node->data;			// Root
+  >   >   }
+  >   >   ```
   >
   > - Examples
   >
