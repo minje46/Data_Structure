@@ -27,7 +27,6 @@
 - **Features**
 
   > - Tree는 hierarchical model.
->
   > - Tree는 최소 연결 트리라고 불리며, graph의 한 종류.
   >
   > - Tree는 DAG의 한 종류.
