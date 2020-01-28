@@ -73,11 +73,13 @@
     > `pros` : **index를 통해 node에 접근할 수 있다.**
     >
     > - Index
-    >   → [0] 은 사용하지 않는다.
+    >   <img width="392" alt="제목 없음" src="https://user-images.githubusercontent.com/23169707/73253290-9629a900-41ff-11ea-890c-4a82ef2e90a8.png">
+    >   
+    > → [0] 은 사용하지 않는다.
     >   → `parent node` : `child node의 index / 2`
     >
     >   → `left child node` : `parent node의 index * 2`
-    >
+    >   
     >   → `right child node` : `parent node의 index * 2 + 1`
     
   * List
