@@ -6,16 +6,16 @@
 
 using namespace std;
 
-void Init(priority_queue *pq, Compare cp)				// To do initialize the heap.
+void Init(priority_queue *pq, Compare cp)				// To do initialize the priority queue.
 {
 	pq->comp = cp;												// Set the standard of comparison.
 	pq->size = 0;
-	pq->arr[0] = INF;											// Do not use index 0.
+	pq->arr[0] = INF;											// Do not use index 0 in heap.
 }
 
-void Insert(priority_queue *pq, int key)					// Insert the key value in heap.
+void Insert(priority_queue *pq, int key)					// Insert the key value in priority queue.
 {
-	pq->size++;
+	pq->size++;													// [Heap algorithm]
 	int idx = pq->size;											// #1. Insert the new node at last location.
 	pq->arr[idx] = key;
 
@@ -31,8 +31,8 @@ void Insert(priority_queue *pq, int key)					// Insert the key value in heap.
 	}
 }
 
-void Delete(priority_queue *pq)								// Delete the key value in heap.
-{
+void Delete(priority_queue *pq)								// Delete the key value in priority queue.
+{																		// [Heap algorithm]
 	pq->arr[1] = 0;												// #1. Delete the root node at first.
 	int idx = 1;
 	pq->arr[idx] = pq->arr[pq->size];					// #2. Move the last node to root node.
@@ -56,20 +56,20 @@ void Delete(priority_queue *pq)								// Delete the key value in heap.
 	}
 }
 
-bool Empty(priority_queue *pq)								// To check heap is empty or not.
+bool Empty(priority_queue *pq)								// To check priority queue is empty or not.
 {
-	if (pq->size == 0)											// Condition of empty heap.
+	if (pq->size == 0)											// Condition of empty priority queue.
 		return true;
 	else
 		return false;
 }
 
-int Get_Data(priority_queue *pq)							// To get the maximum key value in heap.
+int Get_Data(priority_queue *pq)							// To get the root key value in priority queue.
 {
 	return pq->arr[1];											// Root node.
 }
 
-void Print(priority_queue *pq)								// Print the whole of heap.
+void Print(priority_queue *pq)								// Print the whole of priority queue.
 {
 	for (int i = 1; i <= pq->size; i++)
 		cout << pq->arr[i] << " ";

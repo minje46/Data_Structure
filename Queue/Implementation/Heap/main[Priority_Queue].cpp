@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int compare(int a, int b)
+int compare(int a, int b)			// Do implement the comparison standard by user.
 {
 	return a - b;			// Max heap.
 	//return b - a;			// Min heap.	

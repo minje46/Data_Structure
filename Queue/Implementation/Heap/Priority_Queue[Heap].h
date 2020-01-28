@@ -3,7 +3,7 @@
 
 #define MAX 1001
 
-typedef int Compare(int a, int b);
+typedef int Compare(int a, int b);			// The standara of comparison. [Max heap or Min heap]
 
 struct Heap
 {
