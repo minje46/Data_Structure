@@ -4,7 +4,7 @@
 				
 using namespace std;
 
-queue<int> que;												
+queue<int> que;
 
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 	cin.tie(0);	cout.tie(0);
 
 	int test_case;
-	cin >> test_case;
+	cin >> test_case;								
 	cin.ignore();
 	for (int t = 1; t <= test_case; t++)
 	{
