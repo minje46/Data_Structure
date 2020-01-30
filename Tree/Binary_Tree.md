@@ -4,10 +4,10 @@
 
 - **Binary tree는 root node를 중심으로 둘로 나뉘는 두 개의 sub tree도 binary tree이어야 하며, 그 sub tree의 모든 sub tree도 binary tree이어야 한다.**
   
-> **Condition of binary tree**
+  > **Condition of binary tree**
   >
-  > - **Binary tree는 root node를 중심으로 2개의 sub tree로 나뉜다.**
-  > - **2개의 sub tree도 binary tree이어야 한다.**
+  > * **Binary tree는 root node를 중심으로 2개의 sub tree로 나뉜다.**
+  > * **2개의 sub tree도 binary tree이어야 한다.**
 
 
 
