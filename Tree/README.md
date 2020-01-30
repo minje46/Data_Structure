@@ -3,7 +3,7 @@
 ## Tree
 
 - **Tree is a nonlinear data structure that expresses hierarchical relationships.**
-  (트리는 계층적 관계를 표현하는 비선형 자료구조.)
+  <br>(트리는 계층적 관계를 표현하는 비선형 자료구조.)
 
   > → **Tree는 node로 이루어진 자료구조**
   >
