@@ -2,9 +2,9 @@
 
 ## Hash Table
 
--  **Hash table is a data structure that stores pair of data and key mapped by hash function.** <br>(해쉬 테이블은 해쉬 함수로 만든 키와 데이터를 하나의 쌍으로 저장하는 자료구조.)
-  
-> `hash function` : random size를 가진 data를 fixed size의 data로 변환시키는 것.
+- **Hash table is a data structure that stores pair of data and key mapped by hash function.** <br>(해쉬 테이블은 해쉬 함수로 만든 키와 데이터를 하나의 쌍으로 저장하는 자료구조.)
+
+  > `hash function` : random size를 가진 data를 fixed size의 data로 변환시키는 것.
   >
   > `table(map)` : Data를 `key:value` type으로 저장하는 구조. (Key는 unique.) 
   >
