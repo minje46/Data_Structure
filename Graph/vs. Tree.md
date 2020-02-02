@@ -2,8 +2,6 @@
 
 ## vs. Tree
 
-<img width="422" alt="gr" src="https://user-images.githubusercontent.com/23169707/73608895-8a792080-460b-11ea-8adb-8fefde1a6c4d.png">
-
 - **`graph`**
   
   > **`Definition`** : graph는 vertex와 edge를 통해 데이터(객체간의 관계)를 표현하는 자료구조.
