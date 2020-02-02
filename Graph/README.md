@@ -4,16 +4,15 @@
 
 - **Graph(`G(V,E)`) is data structure that represent data through `V`(vertexes) and `E`(edges).** <br>(그래프는 정점과 간선을 통해 데이터를 표현하는 자료구조.)
   
-> → **Graph는 정점들과 간선들로 정의되며, 정점의 위치 정보 or 간선의 순서는 graph의 정의X.**
+  > → **Graph는 정점들과 간선들로 정의되며, 정점의 위치 정보 or 간선의 순서는 graph의 정의X.**
   >
   > →**연결되어 있는 객체 간의 관계를 표현할 수 있는 자료구조.**
   >
-  > - Vertex : 연결의 대상이 되는 개체 or 위치. (node)
+  > * Vertex : 연결의 대상이 되는 개체 or 위치. (node)
   >
-  > - Edge : vertex를 연결하는 선.
+  > * Edge : vertex를 연결하는 선.
   >
-  >   ![image](https://user-images.githubusercontent.com/23169707/73608200-42560000-4603-11ea-8182-05b08a263ebe.png)
-
+  >   <img width="276" alt="1" src="https://user-images.githubusercontent.com/23169707/73608675-3705d300-4609-11ea-8c54-58730c3305d4.png">
 
 - **Features**
 
@@ -49,14 +48,12 @@
 - **Implemented**
 
   > **Graph를 구현하기 위해 vertexes 와 edges의 집합을 표현**.
->
+  >
   > * `Adjacent Matrix`
   >
   >   > **vertex의 연결 유무를 matrix로 저장하는 방식**.
   >   >
   >   > ​	→ **Graph에 edge가 많이 존재하는`dense graph` 표현**.
-  >   >
-  >   > 
   >   >
   >   > <img width="240" alt="mat" src="https://user-images.githubusercontent.com/23169707/73608454-7383ff80-4606-11ea-8eb1-4ce69e835a93.png">
   >   >
@@ -75,7 +72,6 @@
   >   > `pros` : **`V+E` size의 memory 사용**.
   >   >
   >   > `cons` : **vertex `(u,v)`를 확인하기 위해, `adjacent[u]`를 모두 확인해야 한다.**
-
 
 - **Graph Search**
 
