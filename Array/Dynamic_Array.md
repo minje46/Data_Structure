@@ -2,12 +2,11 @@
 
 ## Dynamic Array <Array List & Vector>	
 
-- **Dynamic array is a data structure that implements the list using an internal array.**
-  <br>
-
-  (동적 배열은 내부적인 배열을 이용하여 리스트를 구현한 자료구조.)
-
-  > <img width="505" alt="Dynamic_Array" src="https://user-images.githubusercontent.com/23169707/67666074-5b209b00-f9ae-11e9-8136-fe65c872bbf8.png">
+- **Dynamic array is a data structure that implements the list using an internal array**.
+  
+(동적 배열은 내부적인 배열을 이용하여 리스트를 구현한 자료구조.)
+  
+> <img width="505" alt="Dynamic_Array" src="https://user-images.githubusercontent.com/23169707/67666074-5b209b00-f9ae-11e9-8136-fe65c872bbf8.png">
   >
   > → **Array처럼 data를 하나의 연속적인 묶음으로 저장하고 있기 때문에, index를 이용하여 direct access 가능.**
   >
