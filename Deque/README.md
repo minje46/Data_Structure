@@ -2,10 +2,9 @@
 
 ## Deque (Double Ended Queue)
 
-- **Deque is data structure that data can be inserted and deleted at both of ends.**
-  (덱은 양 끝에서만 자료를 삽입하고 삭제가 가능한 형태의 자료구조.)
-
-  > → **Deque은 Queue와 Stack의 성질을 모두 가지고 있다고 볼 수 있다.**
+- **Deque is data structure that data can be inserted and deleted at both of ends.**<br>(덱은 양 끝에서만 자료를 삽입하고 삭제가 가능한 형태의 자료구조.)
+  
+> → **Deque은 Queue와 Stack의 성질을 모두 가지고 있다고 볼 수 있다.**
   >
   > → **Double Linked List를 통해 구현.**
   >
