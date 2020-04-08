@@ -4,16 +4,14 @@
 
 - **Deque is data structure that data can be inserted and deleted at both of ends.**<br>(덱은 양 끝에서만 자료를 삽입하고 삭제가 가능한 형태의 자료구조.)
   
-> → **Deque은 Queue와 Stack의 성질을 모두 가지고 있다고 볼 수 있다.**
+  > → **Deque은 Queue와 Stack의 성질을 모두 가지고 있다고 볼 수 있다.**
   >
   > → **Double Linked List를 통해 구현.**
   >
-  > - Front : Deque의 첫 번째 data 위치를 가리킨다.
+  > * Front : Deque의 첫 번째 data 위치를 가리킨다.
+  > * Rear : Deque의 마지막 data 위치를 가리킨다.
   >
-  > - Rear : Deque의 마지막 data 위치를 가리킨다.
-  >
-  >   <img width="416" alt="Deque" src="https://user-images.githubusercontent.com/23169707/72618897-7b457200-397f-11ea-82db-45e22495fce0.png">
-
+  > <img width="416" alt="Deque" src="https://user-images.githubusercontent.com/23169707/72618897-7b457200-397f-11ea-82db-45e22495fce0.png">
 
 - **Features**
   1. Front & Rear
