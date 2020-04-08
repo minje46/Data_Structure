@@ -2,12 +2,11 @@
 
 ## Array
 
-- **Array is data structure that controls associated data by grouping it into one name **
-  <br>
-
-  (배열이란, 연관된 데이터를 하나의 이름으로 그룹핑해서 관리하기 위한 자료구조.)
-
-  > → **Array는 data structure의 size가 fixed되어 있고, data를 physical address에 sequential 저장한다.**
+- **Array is data structure that controls associated data by grouping it into one name**.
+  
+(배열이란, 연관된 데이터를 하나의 이름으로 그룹핑해서 관리하기 위한 자료구조.)
+  
+> → **Array는 data structure의 size가 fixed되어 있고, data를 physical address에 sequential 저장한다.**
   >
   > * Index : Data(value)에 대한 위치.
   > * Value : Memory에 저장되어 있는 값.
