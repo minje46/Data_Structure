@@ -4,14 +4,13 @@
 
 - **Array is data structure that controls associated data by grouping it into one name**.<br>(배열이란, 연관된 데이터를 하나의 이름으로 그룹핑해서 관리하기 위한 자료구조.)
   
-> → **Array는 data structure의 size가 fixed되어 있고, data를 physical address에 sequential 저장한다.**
+  > → **Array는 data structure의 size가 fixed되어 있고, data를 physical address에 sequential 저장한다.**
   >
   > * Index : Data(value)에 대한 위치.
   > * Value : Memory에 저장되어 있는 값.
   > * Element : Index와 Value를 포함한 Array의 data.
   >
   > ![image](https://user-images.githubusercontent.com/23169707/66268907-0c835380-e87d-11e9-9348-1274f8f99c4d.png)
-
 
 - **Features**
 
