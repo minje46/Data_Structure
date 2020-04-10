@@ -2,13 +2,8 @@
 
 ## Queue
 
-- **Queue is data structure that data is queued like a line.**
+- **Queue is data structure that data is queued like a line.** <br>(큐는 줄을 서서 차례를 기다리는 형태의 자료구조.)
   
-
-<br>
-
-(큐는 줄을 서서 차례를 기다리는 형태의 자료구조.)
-
   > → **Queue는 FIFO(First In First Out) 형식으로 삽입된 순서대로 자료가 꺼내진다.**
   >
   > * Front : Queue의 맨 앞의 위치를 가리킨다.
