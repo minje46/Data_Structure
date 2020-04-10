@@ -4,7 +4,7 @@
 
 - **Heap is data structure that is designed to search the maximum and minimum value easily based on the complete binary tree structure.** <br>(힙은 완전 이진 트리 구조를 기반으로 최댓값, 최솟값을 쉽게 찾아내기 위한 자료구조.)
   
-> → **Heap의 표준 자료구조는 Array.**
+  > → **Heap의 표준 자료구조는 Array.**
   > → **Parent node와 child node의 key value 사이에 대소관계가 성립.**
   >
   > * Max Heap
@@ -13,7 +13,6 @@
   > * Min Heap
   >   → 모든 node에 저장된 값은 child node에 저장된 값보다 작거나 같아야 한다. (Root node에 가장 작은 값이 저장.)
   >   <img width="203" alt="min" src="https://user-images.githubusercontent.com/23169707/73246172-480da900-41f1-11ea-8b91-cac4ace9035d.png">
-
 
 - **Features**
 
