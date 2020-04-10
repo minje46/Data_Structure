@@ -2,10 +2,9 @@
 
 ## Heap
 
-- **Heap is data structure that is designed to search the maximum and minimum value easily based on the complete binary tree structure.**
-  (힙은 완전 이진 트리 구조를 기반으로 최댓값, 최솟값을 쉽게 찾아내기 위한 자료구조.)
-
-  > → **Heap의 표준 자료구조는 Array.**
+- **Heap is data structure that is designed to search the maximum and minimum value easily based on the complete binary tree structure.** <br>(힙은 완전 이진 트리 구조를 기반으로 최댓값, 최솟값을 쉽게 찾아내기 위한 자료구조.)
+  
+> → **Heap의 표준 자료구조는 Array.**
   > → **Parent node와 child node의 key value 사이에 대소관계가 성립.**
   >
   > * Max Heap
@@ -75,11 +74,12 @@
     > - Index
     >   <img width="392" alt="제목 없음" src="https://user-images.githubusercontent.com/23169707/73253290-9629a900-41ff-11ea-890c-4a82ef2e90a8.png">
     >   
+    >
     > → [0] 은 사용하지 않는다.
     >   → `parent node` : `child node의 index / 2`
     >
     >   → `left child node` : `parent node의 index * 2`
-    >   
+    >
     >   → `right child node` : `parent node의 index * 2 + 1`
     
   * List
