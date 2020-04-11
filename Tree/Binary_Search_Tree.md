@@ -2,19 +2,17 @@
 
 ## Binary Search Tree
 
-- **BST is data structure for search that is binary tree with data storage rules.**
-
-  <br>(BST는 데이터 저장 규칙을 가진 binary tree로서, 탐색을 위한 자료구조.)
+- **BST is data structure for search that is binary tree with data storage rules.** <br> (BST는 데이터 저장 규칙을 가진 binary tree로서, 탐색을 위한 자료구조.)
 
   > **Condition of binary search tree**
-  >
+>
   > * **BST node에 저장된 key는 unique. (중복 허용 X)**
   > * **Root node의 key는 left sub tree를 구성하는 어떠한 node의 key보다 크다.**
   > * **Root node의 key는 right sub tree를 구성하는 어떠한 node의 key보다 작다.**
   > * **Left sub tree와 Right sub tree 모두 BST.**
   >
   > <img width="355" alt="bst" src="https://user-images.githubusercontent.com/23169707/73448465-46381700-43a4-11ea-9043-df26de260fef.png">
-
+  
 - **Search**
 
   > **Search는 항상 root node에서 시작한다.**
