@@ -2,10 +2,9 @@
 
 ## Vector
 
-- **Vector is data structure that allows data to be inserted and deleted back.**
-  (벡터는 뒤로 자료를 삽입하고 삭제가 가능한 형태의 자료구조.)
-
-  > → **vector는 dynamic array로 구현.**
+- **Vector is data structure that allows data to be inserted and deleted back.** <br> (벡터는 뒤로 자료를 삽입하고 삭제가 가능한 형태의 자료구조.)
+  
+> → **vector는 dynamic array로 구현.**
   >
   > - `capacity()` : `vector`의 size를 확인할 수 있는 member function.
   >
