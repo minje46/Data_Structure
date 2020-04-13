@@ -4,10 +4,8 @@
 
 - **`vector`**
   
-> **vector**는 내부 **capacity()**가 고갈되면, 전체 메모리 크기만큼 **reallocation** 과정을 수행.
-  
-  
-  
+  > **vector**는 내부 **capacity()**가 고갈되면, 전체 메모리 크기만큼 **reallocation** 과정을 수행.
+
 - **`deque`**
 
   > **deque**은 fixed size의 **chunk**를 연결하는 구조를 가지기 때문에, 
