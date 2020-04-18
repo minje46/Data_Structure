@@ -20,7 +20,7 @@
   
 - **Limits**
 
-  1. **`Efficiency`**
+  1. **`Memory allocation`**
 
      > * **overhead** : unfixed size의 특성을 유지하기 위해, threshold를 초과할 경우, 새로운 fixed size의 memory를 할당하고, previous data를 copy & delete 해야한다.
 
