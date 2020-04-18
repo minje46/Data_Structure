@@ -4,10 +4,9 @@
 
 - **List는 data를 순차적이고 빈틈없이 저장하기 위한 data structure.**
   
-> <img width="312" alt="ls" src="https://user-images.githubusercontent.com/23169707/79630287-09054900-818b-11ea-8159-19971a45e427.png">
+  > <img width="312" alt="ls" src="https://user-images.githubusercontent.com/23169707/79630287-09054900-818b-11ea-8159-19971a45e427.png">
   >
-> List는 **data:pointer** 형태를 가지며, pointer를 사용하여 **data를 sequential** 저장한다. 
-
+  > List는 **data:pointer** 형태를 가지며, pointer를 사용하여 **data를 sequential** 저장한다. 
 
 - **Features**
 
@@ -41,3 +40,5 @@
   >   $$
   >   → 연결된 pointer를 이용해서 data를 linear search해야 하기 때문.
   >
+
+![java_jcf](https://user-images.githubusercontent.com/23169707/66321868-3495b400-e95c-11e9-88b7-d044bf5db01c.png)
