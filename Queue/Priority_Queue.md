@@ -5,9 +5,8 @@
 - **Priority queue(우선 순위 큐)는 우선 순위를 고려하는 data structure.**
 
   > → **Priority queue는 비선형 자료구조. (Heap 구현)**
->
+  >
   > > Queue는 선형 자료구조. (Array or List 구현)
-
 * **Examples**
 
   > 1. **Network traffic control**
@@ -31,5 +30,7 @@
     >
     > $$
     > O(logN)
-  > $$
+    > $$
+    >
+    > 
 
