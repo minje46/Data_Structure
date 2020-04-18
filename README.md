@@ -1,13 +1,11 @@
 # Data Structure
 
-* **Definition**
+* **Data structure(자료구조)는 data를 효율적으로 이용할 수 있도록 저장하는 방법.**
 
-  >**Data structure(자료구조)는 data를 효율적으로 이용할 수 있도록 저장하는 방법.**
+  > `Data structure` : 자료구조는 **data의 표현 및 저장 방법**을 의미.
   >
-  >> `Data structure` : 자료구조는 **data의 표현 및 저장 방법**을 의미.
-  >>
-  >> `Algorithm` : 저장된 data를 활용하여 **문제 해결 방법**을 의미.
-
+  > `Algorithm` : 저장된 data를 활용하여 **문제 해결 방법**을 의미.
+  
 * **자료구조의 분류**
 
   > Data structure는 **Linear(선형)**구조와 **Non-Linear(비선형)**으로 구분된다.
