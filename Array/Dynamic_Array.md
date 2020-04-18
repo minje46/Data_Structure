@@ -1,65 +1,45 @@
 # Data Structure
 
-## Dynamic Array <Array List & Vector>	
+## Dynamic Array (Array List, Vector)
 
-- **Dynamic array is a data structure that implements the list using an internal array**.<br>(동적 배열은 내부적인 배열을 이용하여 리스트를 구현한 자료구조.)
+- **Dynamic array(동적 배열)은 array를 이용하여 list를 구현한 data structure.** 
 
-  > <img width="505" alt="Dynamic_Array" src="https://user-images.githubusercontent.com/23169707/67666074-5b209b00-f9ae-11e9-8136-fe65c872bbf8.png">
+  > <img width="303" alt="al" src="https://user-images.githubusercontent.com/23169707/79631308-6ac9b100-8193-11ea-80c0-b4a4583ff3b8.png">
   >
-  > → **Array처럼 data를 하나의 연속적인 묶음으로 저장하고 있기 때문에, index를 이용하여 direct access 가능.**
-  >
-  > ![image](https://user-images.githubusercontent.com/23169707/66317742-0d87b400-e955-11e9-8ec8-7099975a8677.png)
-  >
-  > → **List의 data structure를 가지고 있기 때문에 Insert와 Delete는 overhead.**
-  >
-  > <img width="473" alt="Array_list" src="https://user-images.githubusercontent.com/23169707/66318458-4e33fd00-e956-11e9-99da-01af57b78b2b.png">
-  >
-  > * **Operation**
-  >
-  >   > → **List가 가지고 있는 functions(기능).**
-  >   >
-  >   > * Insert : 처음, 중간, 끝에 element를 insert.
-  >   > * Delete : 처음, 중간, 끝에 있는 element를 delete.
-  >   > * Search : List에 data가 있는지 check.
-  >   > * Copy : temporary array에 data를 copy한다. (For insert)
-
+  > Dynamic array는 array로 구현되기 때문에 fixed size를 할당받으며, 필요에 따라 dynamic allocation을 통해 크기를 변동할 수 있다.
+  
 - **Features**
 
-  * Index
+  1. **`Index`**
 
-    > Pros : `Random access 가능하여, data 검색에 유리.`
-    
-  * Dynamic allocation
+     > * **random access** : data를 search하는 과정 없이, index를 통해 directly access가 가능하다.
   
-    > Pros : `Array와는 다르게 size를 dynamic allocation할 수 있다.`
-    >
-    > Cons : `Inefficient.`
+  2. **`Unfixed size`**
+  
+     > * **dynamic allocation** : memory를 동적으로 할당하여, data를 저장할 수 있다.
   
 - **Limits**
 
-  * Insert & Delete
+  1. **`Efficiency`**
 
-    > * `overhead` 
-    >   1. 중간에 data를 insert할 경우, 순차적인 구조를 유지하기 위해 모든 data를 right shift 연산 필요.
-    >   2. Array list는 순차적인 index  구조를 갖기 때문에, empty space를 제거하기 위해 left shift 연산이 필요. 
-  
+     > * **overhead** : unfixed size의 특성을 유지하기 위해, threshold를 초과할 경우, 새로운 fixed size의 memory를 할당하고, previous data를 copy & delete 해야한다.
 
 
 - **Time complexity.**
 
-  > * Indexing
+  > * **Data access**
   >   $$
   >   O(1)
   >   $$
   >   → Index를 이용하여 direct access가 가능하기 때문.
-  > * Insert & Delete *at beginning* & *in middle*
+  > * **Data search**
   >   $$
   >   O(N)
   >   $$
   >   → 기존의 data를 shift해야 하기 때문.
   >
-  > * Insert & Delete *at end*
+  > * **Data insert**
   >   $$
-  >   O(1)
+  >   O(1) or O(N)
   >   $$
-  >   → Data의 shift가 불필요하기 때문.
+  >   → Allocated memory에 따라, dynamic allocation을 우선 수행하게 되는 경우가 존재.
