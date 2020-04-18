@@ -5,9 +5,8 @@
 - **Circular queue(원형 큐)는 linear queue의 문제점을 보완하기 위한 data structure.**
 
   > <img width="250" alt="cq" src="https://user-images.githubusercontent.com/23169707/79638139-0290c480-81bf-11ea-9a3b-4cd955093a71.png">
->
+  >
   > Circular queue는 linear queue의 memory waste를 해결하기 위해 front와 rear를 circular 조정.
-
 
 - **Implemented**
 
