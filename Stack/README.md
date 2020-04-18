@@ -4,10 +4,9 @@
 
 - **Stack은 data를 linear structure로 쌓아 올린 형태의 data structure.**
   
-> <img width="250" alt="st" src="https://user-images.githubusercontent.com/23169707/79637313-5a2c3180-81b9-11ea-922b-5d40318d1972.png">	
+  > <img width="250" alt="st" src="https://user-images.githubusercontent.com/23169707/79637313-5a2c3180-81b9-11ea-922b-5d40318d1972.png">
   >
-> Stack은 **LIFO(Last In First Out)**으로 마지막에 inserted data가 먼저 pop 된다.
-
+  > Stack은 **LIFO(Last In First Out)**으로 마지막에 inserted data가 먼저 pop 된다.
 
 - **Features**
 
