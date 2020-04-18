@@ -4,10 +4,9 @@
 
 - **Linked list(연결 리스트)는 node를 이용하여 list를 구현한 data structure.**
   
-> <img width="444" alt="ll" src="https://user-images.githubusercontent.com/23169707/79631106-bd09d280-8191-11ea-95dc-7a09489f7da1.png">
+  > <img width="444" alt="ll" src="https://user-images.githubusercontent.com/23169707/79631106-bd09d280-8191-11ea-95dc-7a09489f7da1.png">
   >
-> Linked list는 data를 node(data:pointer)형태로 저장하고, node를 서로 연결 시킨다.
-  
+  > Linked list는 data를 node(data:pointer)형태로 저장하고, node를 서로 연결 시킨다.
 - **Features**
 
   1. **`Pointer`**
