@@ -2,93 +2,77 @@
 
 ## Heap
 
-- **Heap is data structure that is designed to search the maximum and minimum value easily based on the complete binary tree structure.** <br>(힙은 완전 이진 트리 구조를 기반으로 최댓값, 최솟값을 쉽게 찾아내기 위한 자료구조.)
+- **Heap은 complete binary tree(완전 이진 트리)구조를 기반으로 최대,최소 값을 빠르게 search하기 위한 data structure.**
   
-  > → **Heap의 표준 자료구조는 Array.**
-  > → **Parent node와 child node의 key value 사이에 대소관계가 성립.**
-  >
-  > * Max Heap
-  >   → 모든 node에 저장된 값은 child node에 저장된 값보다 크거나 같아야 한다. (Root node에 가장 큰 값이 저장.)
+  > * **`max heap`**
   >   <img width="202" alt="max" src="https://user-images.githubusercontent.com/23169707/73246166-43e18b80-41f1-11ea-9678-67844f685dc7.png">
-  > * Min Heap
-  >   → 모든 node에 저장된 값은 child node에 저장된 값보다 작거나 같아야 한다. (Root node에 가장 작은 값이 저장.)
+  > * **`min heap`**
   >   <img width="203" alt="min" src="https://user-images.githubusercontent.com/23169707/73246172-480da900-41f1-11ea-8b91-cac4ace9035d.png">
-
+  >
+  > Heap의 **표준 자료구조는 array**이며, **root는 max,min value**를 저장하고 있다.
+  
 - **Features**
 
-  - Insert
+  1. **`Insert`**
   
-    > <img width="403" alt="insert" src="https://user-images.githubusercontent.com/23169707/73247667-c1f36180-41f4-11ea-9519-e5fa33eade0b.png">
-    >
-    > 1. new node는 heap의 마지막 node에 insert.
-    >    (Complete binary tree : Leaf node의 left → right 순서로 추가)
-    >
-    > 2. parent node와 value의 대소관계를 비교.
-    >
-    >    > max heap : new node가 크다면, `swap(parent, new)`
-    >    >
-    >    > min heap : new node가 작으면, `swap(parent, new)`
-    >
-    > 3. Root node까지 반복.
+     > <img width="300" alt="insert" src="https://user-images.githubusercontent.com/23169707/73247667-c1f36180-41f4-11ea-9519-e5fa33eade0b.png">
+     >
+     > - new node는 leaf(heap의 마지막 위치)에 insert.
+     >
+     > - parent node와 value의 대소관계를 비교.
+     >
+     >   > `max heap` : new node가 크다면, `swap(parent, new)`
+     >   >
+     >   > `min heap` : new node가 작으면, `swap(parent, new)`
+     >
+     > - root node까지 recursive.
   
-  - Delete
+  2. **`Delete`**
   
-    > <img width="429" alt="delete" src="https://user-images.githubusercontent.com/23169707/73248118-b3597a00-41f5-11ea-9fac-90b0c3d7a85c.png">
-    >
-    > 1. Root node를 delete.
-    >
-    >    > max heap : root node(Maximum value.)
-    >    >
-    >    > min heap : root node(Minimum value.)
-    >
-    > 2. Heap의 마지막 node를 root node로 이동.
-    >
-    > 3. children node들과 value의 대소관계를 비교.
-    >
-    >    > max heap : new node가 크다면, `swap(parent, new)`
-    >    >
-    >    > min heap : new node가 작으면, `swap(parent, new)`
-    >
-    > 4. Leaf node까지 반복. (Heap 재구성.)
+     > <img width="300" alt="delete" src="https://user-images.githubusercontent.com/23169707/73248118-b3597a00-41f5-11ea-9fac-90b0c3d7a85c.png">
+     >
+     > * root node를 delete.
+     >
+     >   > `max heap` : root node(maximum value.)
+     >   >
+     >   > `min heap` : root node(minimum value.)
+     >
+     > * heap의 마지막 node를 root node로 이동.
+     >
+     > * children node들과 value의 대소관계를 비교.
+     >
+     >   > `max heap` : new node가 크다면, `swap(parent, new)`
+     >   >
+     >   > `min heap` : new node가 작으면, `swap(parent, new)`
+     >
+     > * leaf node까지 반복. (heap 재구성.)
   
 - **Examples**
 
-  > - Heap sort
-  >
-  >   > `O(NlogN)` 성능을 가지는 array sort.
-  >
-  > - Priority queue
-  >
-  >   > `O(logN)` 성능을 가지는 priority queue 구현 가능.
-  >
-  > - Graph algorithm
+  > 1. **heap sort** : `O(NlogN)` 성능을 가지는 array sort.
+  > 2. **priority queue** : `O(logN)` 성능을 가지는 priority queue 구현.
 
 
 - **Implemented**
 
-  * Array
+  * **`array`**
 
-    > `pros` : **index를 통해 node에 접근할 수 있다.**
+    > * **pros** : index를 통해 node access.
     >
-    > - Index
-    >   <img width="392" alt="제목 없음" src="https://user-images.githubusercontent.com/23169707/73253290-9629a900-41ff-11ea-890c-4a82ef2e90a8.png">
-    >   
-    >
-    > → [0] 은 사용하지 않는다.
-    >   → `parent node` : `child node의 index / 2`
-    >
-    >   → `left child node` : `parent node의 index * 2`
-    >
-    >   → `right child node` : `parent node의 index * 2 + 1`
+    >   > `parent node` : child node의 index / 2
+    >   >
+    >   > `left child node` : parent node의 index * 2
+    >  >
+    >   >  `right child node` : parent node의 index * 2 + 1
     
-  * List
+  * **`list`**
   
-    > `Cons` : `new node`를 **heap**의 마지막 위치에 추가하는 것이 hard.
+    > * **cons** : `new node`를 **heap**의 마지막 위치에 추가하는 것이 hard.
 
 
 - **Time complexity.**
 
-  > * Array 
+  > * **array** 
   >
   > $$
   > O(log N)
