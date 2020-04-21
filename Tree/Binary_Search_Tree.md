@@ -47,7 +47,7 @@
   >
   > <img width="529" alt="ins" src="https://user-images.githubusercontent.com/23169707/79860306-627caa80-840d-11ea-9732-465b43aee8aa.png">
   >
-  > → **node delete 후, 메모리 해제(NULL) **
+  > → **node delete 후, 메모리 해제(NULL)**
   >
   > 
   >
