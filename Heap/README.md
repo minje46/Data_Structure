@@ -62,8 +62,8 @@
     >   > `parent node` : child node의 index / 2
     >   >
     >   > `left child node` : parent node의 index * 2
-    >  >
-    >   >  `right child node` : parent node의 index * 2 + 1
+    >   >
+    >   > `right child node` : parent node의 index * 2 + 1
     
   * **`list`**
   
