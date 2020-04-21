@@ -52,6 +52,7 @@
   > 
   >
   > **#2. Delete node has one child node.**
+  >
   > <img width="564" alt="de" src="https://user-images.githubusercontent.com/23169707/79860367-83dd9680-840d-11ea-9069-e343a375366d.png">
   >
   > → **node delete 후, 남겨진 child node를 parent node와 연결.**
