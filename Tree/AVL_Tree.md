@@ -7,11 +7,10 @@
 - **AVL tree는 tree의 height 균형을 유지하기 위한 binary search tree.**
 
   > <img width="250" alt="avl" src="https://user-images.githubusercontent.com/23169707/79861910-27c84180-8410-11ea-8e62-79ae63d4ad28.png">
->
+  >
   > AVL tree는 insert, delete 연산 이후, tree balance를 확인하고 **self-balancing**.
   >
   > > → BST의 불균형한 형태의 `O(N)`성능을 개선하기 위해 개발.
-
 * **Features**
 
   1. **`self-balancing`**
