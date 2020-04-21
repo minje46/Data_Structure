@@ -4,12 +4,9 @@
 
 - **Tree는 hierarchical relationship(계층적 관계)를 표현하는 비선형 data structure.**
   
-> <img width="250" alt="tr" src="https://user-images.githubusercontent.com/23169707/79843600-6c92af00-83f5-11ea-8678-c6e5663cf99f.png">
-  >
-  > 
+  > <img width="250" alt="tr" src="https://user-images.githubusercontent.com/23169707/79843600-6c92af00-83f5-11ea-8678-c6e5663cf99f.png">
   >
   > Tree는 **data가 저장된 node**들이 **edge(간선)으로 서로 연결**되어 있다.
-
 
 - **Features**
 
