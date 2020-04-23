@@ -5,9 +5,12 @@
 - **Heap은 complete binary tree(완전 이진 트리)구조를 기반으로 최대,최소 값을 빠르게 search하기 위한 data structure.**
   
   > * **`max heap`**
-  >   <img width="202" alt="max" src="https://user-images.githubusercontent.com/23169707/73246166-43e18b80-41f1-11ea-9678-67844f685dc7.png">
+  >
+  > <img width="202" alt="max" src="https://user-images.githubusercontent.com/23169707/73246166-43e18b80-41f1-11ea-9678-67844f685dc7.png">
+  >
   > * **`min heap`**
-  >   <img width="203" alt="min" src="https://user-images.githubusercontent.com/23169707/73246172-480da900-41f1-11ea-8b91-cac4ace9035d.png">
+  >
+  > <img width="203" alt="min" src="https://user-images.githubusercontent.com/23169707/73246172-480da900-41f1-11ea-8b91-cac4ace9035d.png">
   >
   > Heap의 **표준 자료구조는 array**이며, **root는 max,min value**를 저장하고 있다.
   
