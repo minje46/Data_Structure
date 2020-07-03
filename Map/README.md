@@ -2,8 +2,7 @@
 
 ## Map
 
-- **Map은 **
-  **Map은 `key:value` 형태로 data를 중복없이 저장하며, iterator를 이용하여 data에 접근하는 data structure.**
+- **Map은 `key:value` 형태로 data를 중복없이 저장하며, iterator를 이용하여 data에 접근하는 data structure.**
   
   > <img width="137" alt="제목 없음" src="https://user-images.githubusercontent.com/23169707/86357879-7fedb080-bca9-11ea-8c32-8a5e23fb0cd2.png">
   >
