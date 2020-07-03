@@ -2,23 +2,50 @@
 
 ## Graph
 
-- **Graph(`G(V,E)`) is data structure that represent data through `V`(vertexes) and `E`(edges).** <br>(그래프는 정점과 간선을 통해 데이터를 표현하는 자료구조.)
+- **Graph(`G(V,E)`)는 vertex(정점)과 edge(간선)을 통해 data를 표현하는 data structure.**
   
-  > → **Graph는 정점들과 간선들로 정의되며, 정점의 위치 정보 or 간선의 순서는 graph의 정의X.**
+  > <img width="276" alt="1" src="https://user-images.githubusercontent.com/23169707/73608675-3705d300-4609-11ea-8c54-58730c3305d4.png">
   >
-  > →**연결되어 있는 객체 간의 관계를 표현할 수 있는 자료구조.**
-  >
-  > * Vertex : 연결의 대상이 되는 개체 or 위치. (node)
-  >
-  > * Edge : vertex를 연결하는 선.
-  >
-  >   <img width="276" alt="1" src="https://user-images.githubusercontent.com/23169707/73608675-3705d300-4609-11ea-8c54-58730c3305d4.png">
-
+  > → Graph는 연결되어 있는 **객체간의 관계**를 표현할 수 있다.
+  
 - **Features**
 
-  > - **Graph는 network model**.
-  >- **Root node와 parent-child 개념이 없다**.
-  > - **Graph의 순회는 DFS와 BFS로 이루어진다**.
+  1. **`Recursive`**
+  
+     > ![dfs](https://user-images.githubusercontent.com/23169707/73608616-91eafa80-4608-11ea-9dca-57f543e9da73.gif)
+     >
+     > `DFS(Depth First Search)`
+     >
+     > ```c++
+     > void DFS(Node cur)
+     > {
+     > 	if(cur == NULL)
+     >         return;
+     >     visit[cur] = true;
+     >     for(each : cur.adjacent)
+     >         if(!visit[each])
+     >             DFS(each);
+     > }
+     > ```
+     >
+     > `BFS(Breadth First Search)`
+     >
+     > ```c++
+     > void BFS(Node dpt)
+     > {
+     >     queue<int> que;    
+     >     que.push(dpt);	visit[dpt] = true;
+     >     while(!que.empty())
+     >     {
+     >         auto cur = que.front();
+     >         que.pop();
+     >         
+     >         for(each : cur.adjacent)
+     >             if(!visit[each])
+     >                 que.push(each);		visit[each] = true;
+     >     }
+     > }
+     > ```
   
 - **Graph Type**
 
@@ -47,34 +74,18 @@
 
 - **Implemented**
 
-  > **Graph를 구현하기 위해 vertexes 와 edges의 집합을 표현**.
-  >
-  > * `Adjacent Matrix`
-  >
-  >   > **vertex의 연결 유무를 matrix로 저장하는 방식**.
-  >   >
-  >   > ​	→ **Graph에 edge가 많이 존재하는`dense graph` 표현**.
-  >   >
-  >   > <img width="240" alt="mat" src="https://user-images.githubusercontent.com/23169707/73608454-7383ff80-4606-11ea-8eb1-4ce69e835a93.png">
-  >   >
-  >   > `pros` :  **vertex `(u,v)`를 통해 edge의 유무를 바로 확인할 수 있다**.
-  >   >
-  >   > `cons` : **`V*V` size의 memory 필요**.
-  >
-  > * `Adjacent List`
-  >
-  >   > **vertex에 연결된 edge list를 저장하는 방식**.
-  >   >
-  >   > ​	→ **Graph에 적은 수의 edge가 존재하는 `sparse graph` 표현**.
-  >   >
-  >   > <img width="335" alt="list" src="https://user-images.githubusercontent.com/23169707/73608455-754dc300-4606-11ea-898a-b3919035535e.png">
-  >   >
-  >   > `pros` : **`V+E` size의 memory 사용**.
-  >   >
-  >   > `cons` : **vertex `(u,v)`를 확인하기 위해, `adjacent[u]`를 모두 확인해야 한다.**
+  * **`adjacent matrix`**
 
-- **Graph Search**
+    > <img width="240" alt="mat" src="https://user-images.githubusercontent.com/23169707/73608454-7383ff80-4606-11ea-8eb1-4ce69e835a93.png">
+    >
+    > * `pros` :  **vertex `(u,v)`를 통해 edge의 유무를 바로 확인할 수 있다**.
+    > * `cons` : **`V*V` size의 memory 필요**.
 
-  > * **`Depth First Search` vs. `Breadth First Search`**
-  >
-  >   ![dfs](https://user-images.githubusercontent.com/23169707/73608616-91eafa80-4608-11ea-9dca-57f543e9da73.gif)
+  * **`adjacent list`**
+
+    > <img width="335" alt="list" src="https://user-images.githubusercontent.com/23169707/73608455-754dc300-4606-11ea-898a-b3919035535e.png">
+    >
+    > * `pros` : **`V+E` size의 memory 사용**.
+    > * `cons` : **vertex `(u,v)`를 확인하기 위해, `adjacent[u]`를 모두 확인해야 한다.**
+
+
