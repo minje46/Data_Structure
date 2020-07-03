@@ -6,7 +6,7 @@
   
   > <img width="276" alt="1" src="https://user-images.githubusercontent.com/23169707/73608675-3705d300-4609-11ea-8c54-58730c3305d4.png">
   >
-  > → Graph는 연결되어 있는 **객체간의 관계**를 표현할 수 있다.
+  > Graph는 연결되어 있는 **객체간의 관계**를 표현할 수 있다.
   
 - **Features**
 
